@@ -1,0 +1,37 @@
+.root{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f0f0f0
+  
+}
+.top{
+   flex: 1;
+}
+.buttom{
+    flex: 2;
+}
+
+.login_container{
+    text-align: center;
+    margin: 0px;
+}
+.login_container view{
+    background-color: white;
+    margin:10px 0;
+}
+
+.login_container input{
+    width: 90%;
+    margin: 10px;
+    padding: 10rpx;
+}
+
+
+.login_container  button{
+    width: 80%;
+    background-color: skyblue;
+    border-radius: 8px;
+    color: white;
+
+}

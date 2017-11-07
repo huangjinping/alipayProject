@@ -1,0 +1,9 @@
+<template name="Seckill">
+  <view class="seckill_root"  catchTap="onCancel"> 
+     <view class="seckill_container">
+          <text>
+            {{timer}}
+          </text>
+     </view>
+</view>
+</template>

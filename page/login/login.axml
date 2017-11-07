@@ -1,0 +1,16 @@
+<view class="root">
+  <view class="top" ></view>
+  <view  class="buttom">
+    <view class="content">
+      <form class="login_container" onSubmit="onSubmit" onReset="onReset">
+        <view>
+          <input type="text" name="loginName" placeholder="请输入登录手机号码" auto-focus  />
+        </view>
+        <view>
+          <input type="text" name="passWord" placeholder="请输入密码"  password />
+        </view>
+        <button type="default" size="mini"form-type="submit"> 登 录  </button>
+      </form>
+    </view>
+  </view>
+</view>

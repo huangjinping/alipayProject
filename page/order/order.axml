@@ -1,0 +1,24 @@
+<import src="./template/order-view/order-view.axml" />
+<view class="top-tab flex-wrp flex-tab ">
+  <view class="toptab flex-item {{currentNavtab==idx ? 'active' : ''}}" a:for="{{navTab}}" a:for-index="idx" a:for-item="itemName" data-idx="{{idx}}" onTap="switchTab">    {{itemName}}  </view>
+</view>
+<view class="content">
+  <scroll-view scroll-y="{{true}}" style="height: 600px;" onScrollToUpper="upper" onScrollToLower="lower" onScroll="scroll"  scroll-top="{{scrollTop}}">
+    <view hidden="{{currentNavtab==0 ? '' : true}}">
+      <block a:for="{{tradeList}}" a:for-index="idx" a:for-item="itemName">
+        <template is="order-item" data="{{...itemName}}">
+      </block>
+    </view>
+    <view hidden="{{currentNavtab==1 ? '' : true}}">
+      <block a:for="{{tradeUnList}}" a:for-index="idx" a:for-item="itemName">
+        <template is="order-item" data="{{...itemName}}">
+      </block>
+    </view>
+
+      <!-- <view id="blue" class="scroll-view-item bc_blue"></view>
+        <view id="red"  class="scroll-view-item bc_red"></view>
+        <view id="yellow" class="scroll-view-item bc_yellow"></view>
+        <view id="green" class="scroll-view-item bc_green"></view>
+       -->
+  </scroll-view>
+</view>

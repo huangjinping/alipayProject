@@ -1,0 +1,21 @@
+
+.item_root{
+    background-color: white;
+    border-radius: 20rpx;
+    margin: 10rpx;
+    padding: 10px;
+}
+.item{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   margin: 10rpx 0px;
+}
+
+.red{
+    color: red;
+}
+
+.mark{
+    font-size: 12px;
+}

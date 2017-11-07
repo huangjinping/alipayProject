@@ -1,0 +1,5 @@
+
+<import src="./template/main-view/main-view.axml"/>
+<view class="main_container">
+    <template is="Grid" data={{...grid}} > 
+</view>

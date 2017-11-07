@@ -1,0 +1,15 @@
+<template name="order-item">
+  <view class="item_root">
+    <view class="item">
+      <text>{{goodsName}}</text>
+      <text>{{tradeStatus}}</text>
+    </view>
+    <view class="item">
+      <text class="red">{{price}}</text>
+      <text>{{tradeTime}}</text>
+    </view>
+    <view  a:if={{mark!=null}} class="item">
+      <text class="mark">备注:{{mark}}</text>
+    </view>
+  </view>
+</template>

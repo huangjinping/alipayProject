@@ -1,0 +1,22 @@
+.seckill_root{
+    height: 100vh;
+    background-color: #55555555;
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+    align-items: center;
+
+}
+.seckill_root .seckill_container{
+    background-color:black;
+    width: 300rpx;
+    height: 300rpx;
+    text-align: center;
+    border-radius: 20rpx;
+}
+
+.seckill_root .seckill_container text{
+    line-height: 300rpx;
+    font-size: 100rpx;
+    color: white;    
+}

@@ -1,0 +1,47 @@
+<import src="./template/trade-tag/trade-tag.axml"/>
+<import src="./template/seckill/seckill.axml"/>
+<view>
+  <view a:if="{{isShowLoading}}" class="popwindow">
+    <template is="Seckill" data="{{timer}}"></template>
+  </view>
+  <form onSubmit="onSubmit" onReset="onReset">
+    <view class="trade_container">
+      <view class="price">
+        <text class="trade_sub_title">商品名称:</text>
+        <input type="text" name="goods_name" placeholder="请输入商品名称" auto-focus />
+      </view>
+      <view class="price">
+        <text class="trade_sub_title">商品价格:</text>
+        <input type="number" placeholder="请输入商品金额" auto-focus onConfirm="priceInputConfirm" onBlur="priceInputBlur"/>
+      </view>
+      <view >
+        <text class="trade_sub_title">请选择期数</text>
+        <view class="tag-list duration">
+          <block a:for="{{tags}}">
+            <template is="tag" data="{{props: tags[index],ids: index}}" />
+          </block>
+        </view>
+      </view>
+      <view class="scan">
+        <text class="trade_sub_title">请扫描客户的花呗支付号码</text>                                                   
+        <view onTap="onScanCode">
+          <input name="authCode" type="number" placeholder="花呗支付号码" disabled=="false" value="{{authCode}}" class="scan_result" />
+          <image src="/image/api_scan.png" style="width: 64rpx;height: 64rpx;" mode="aspectFit" />
+        </view>
+      </view>
+      <view>
+        <text class="trade_sub_title">客户总还款:</text>
+        <text >{{totAmt}}</text>
+      </view>
+      <view>
+        <text class="trade_sub_title">总利息:</text>
+        <text >{{feeAmt}}</text>
+      </view>
+      <view>
+        <text class="trade_sub_title">每月还款额:</text>
+        <text >{{periodAmt}}</text>
+      </view>
+      <button type="default" size="mini"form-type="submit"> 登 录  </button>
+    </view>
+  </form>
+</view>

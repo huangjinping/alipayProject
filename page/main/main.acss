@@ -1,0 +1,10 @@
+@import "./template/main-view/main-view.acss";
+page{
+    background-color: white;
+}
+.main_container{
+    width: 80%;
+    margin: 0 auto;
+
+
+}

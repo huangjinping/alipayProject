@@ -1,0 +1,48 @@
+@import './template/trade-tag/trade-tag.acss';
+@import './template/seckill/seckill.acss';
+.trade_container{
+  margin: 20rpx auto;
+}
+
+.trade_container>view{
+    background-color: white;
+    margin-top: 20rpx;
+    padding: 20rpx;
+}
+
+
+
+trade_sub_title{
+    font-size: 32rpx;
+    line-height: 45rpx;
+    color: #808080;
+}
+
+.duration{
+    margin: 20rpx;
+}
+.popwindow{
+    position: fixed;
+    width: 100%;
+    top:0;
+    left: 0;
+        z-index:1000; 
+
+}
+.scan>view{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   margin-top: 20rpx;
+}
+.scan>view>text{
+    flex: 1;
+}
+ .trade_container button{
+    width: 80%;
+    background-color: skyblue;
+    border-radius: 8px;
+    margin-top: 100rpx;
+    margin-left: 10%;
+    color: white;
+}
